@@ -1,8 +1,8 @@
 import React from "react";
 
-const TabButton = ({children , onSelect}) => {
+const TabButton = ({children , onSelect, isSelected}) => {
   return (
-    <button id="button" onClick = {()=> onSelect()}>
+    <button className={isSelected ? "active" : undefined} id="button" onClick = {()=> onSelect()}>
       {children}
     </button>
   );
