@@ -4,12 +4,12 @@ import Examples from "./components/Examples";
 
 const App = () => {
   return (
-    <div>
+    <>
       <main>
         <CoreConcepts />
         <Examples />
       </main>
-    </div>
+    </>
   );
 };
 

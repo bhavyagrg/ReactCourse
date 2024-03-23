@@ -1,11 +1,11 @@
 import React from "react";
 
-const TabButton = ({ children, onSelect, isSelected }) => {
+const TabButton = ({ children, isSelected, ...props }) => {
   return (
     <button
       className={isSelected ? "active" : undefined}
       id="button"
-      onClick={() => onSelect()}
+      {...props}
     >
       {children}
     </button>
